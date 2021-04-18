@@ -43,12 +43,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-decoration: none;
+  color: #ffffff;
 }
 .page-header-navigation-logo-svg {
-  fill: #ffffff;
+  fill: currentColor;
 }
 .page-header-navigation-logo-txt {
-  color: #ffffff;
   font-family: 'raleway', 'arial', 'sans-serif';
   font-size: 34px;
   line-height: 1.2;
@@ -56,6 +56,9 @@ body {
   letter-spacing: -0.04em;
   -ms-flex-item-align: center;
       align-self: center;
+}
+.page-header-navigation-logo:hover {
+  color: #c7b299;
 }
 .page-header-navigation-menu {
   margin: 0 63px 0 219px;
@@ -79,6 +82,12 @@ body {
 .page-header-navigation-menu-list-item:nth-child(2) {
   color: #c7b299;
 }
+.page-header-navigation-menu-list-item:hover {
+  color: #c7b299;
+}
+.page-header-navigation-menu-list-item:nth-child(2):hover {
+  color: #ffffff;
+}
 .page-header-navigation-bag {
   width: 18px;
   -ms-flex-item-align: center;
@@ -90,6 +99,9 @@ body {
 }
 .page-header-navigation-bag-svg {
   fill: #ffffff;
+}
+.page-header-navigation-bag-svg:hover {
+  fill: #c7b299;
 }
 .page-header-navigation-search {
   width: 24px;
@@ -148,6 +160,10 @@ body {
   left: -25px;
   opacity: 0.5;
 }
+.page-header-main-pointer:hover:after {
+  border-top: 5px solid #c7b299;
+  border-right: 5px solid #c7b299;
+}
 .page-header-main-pointer:first-child:after {
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
@@ -199,6 +215,14 @@ body {
           box-shadow: inset 0px -3px 0px 0px #736357;
   border-radius: 3px;
   text-decoration: none;
+}
+.page-header-main-txt-link:hover {
+  color: #c7b299;
+  background-color: #ffffff;
+}
+.page-header-main-txt-link:active {
+  color: #ffffff;
+  background-color: #998675;
 }
 .page-header-main-pagination {
   width: 100%;

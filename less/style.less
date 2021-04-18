@@ -1,5 +1,5 @@
 @color: #ffffff;
-
+@color-hover: #c7b299;
 @font-face {
     font-family: raleway;
     src: url('../fonts/raleway-regular.ttf');
@@ -36,11 +36,11 @@ body{
             display: flex;
             justify-content: space-between;
             text-decoration: none;
+            color: @color;
             &-svg{
-                fill: @color;
+                fill: currentColor;
             }
             &-txt{
-                color: @color;
                 font-family: 'raleway', 'arial', 'sans-serif';
                 font-size: 34px;
                 line-height: 1.2;
@@ -48,6 +48,9 @@ body{
                 letter-spacing: -0.04em;
                 align-self: center;
             }
+        }
+        &-logo:hover{
+            color: @color-hover;
         }
         &-menu{
             // width: 637px;
@@ -66,7 +69,13 @@ body{
                     color: @color;
                 }
                 &-item:nth-child(2){
-                    color:#c7b299;
+                    color:@color-hover;
+                }
+                &-item:hover{
+                    color: @color-hover;
+                }
+                &-item:nth-child(2):hover{
+                    color:@color;
                 }
             }
         }
@@ -79,6 +88,9 @@ body{
             border: none;
             &-svg{
                 fill: @color;
+            }
+            &-svg:hover{
+                fill: @color-hover;
             }
         }
         &-search{
@@ -131,6 +143,10 @@ body{
             left: -25px;
             opacity: 0.5;
         }
+        &-pointer:hover:after{
+            border-top: 5px solid @color-hover;
+            border-right: 5px solid @color-hover;
+        }
         &-pointer:first-child:after{
             transform: rotate(-135deg) 
         }
@@ -178,6 +194,14 @@ body{
                 box-shadow: inset 0px -3px 0px 0px #736357;
                 border-radius: 3px;
                 text-decoration: none;
+            }
+            &-link:hover{
+                color: @color-hover;
+                background-color: @color;
+            }
+            &-link:active{
+                color: @color;
+                background-color: #998675;
             }
         }
         &-pagination{
