@@ -18,7 +18,6 @@ body {
   background-color: grey;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 3px solid red;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 40px 0 40px 0;
@@ -114,9 +113,6 @@ body {
   background-position: right;
 }
 .page-header-main {
-  border: 2px solid green;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,29 +129,105 @@ body {
 .page-header-main-pointer {
   width: 40px;
   height: 73px;
-  border: 2px solid purple;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: transparent;
   margin: 0;
+  background-color: transparent;
+  border: none;
+  position: relative;
+}
+.page-header-main-pointer:after {
+  content: "";
+  display: inline-block;
+  width: 49px;
+  height: 49px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  opacity: 0.5;
+}
+.page-header-main-pointer:first-child:after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 .page-header-main-txt {
   width: 589px;
   height: 261px;
-  border: 2px solid blue;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: transparent;
   margin: 0 475px 0 475px;
+  color: #ffffff;
+  text-align: center;
+}
+.page-header-main-txt-subtitle {
+  font-family: 'raleway', 'arial', 'sans-serif';
+  font-size: 36px;
+  line-height: 0.8;
+  font-weight: 500;
+  margin: 0;
+}
+.page-header-main-txt-title {
+  font-family: 'raleway', 'arial', 'sans-serif';
+  font-size: 52px;
+  line-height: 0.8;
+  font-weight: 800;
+  margin: 14px 0 19px 0;
+}
+.page-header-main-txt-paragraph {
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+.page-header-main-txt-link {
+  color: #ffffff;
+  display: block;
+  width: 170px;
+  padding: 21px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 52px auto 0 auto;
+  text-transform: uppercase;
+  font-family: 'raleway', 'arial', 'sans-serif';
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 800;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #736357;
+          box-shadow: inset 0px -3px 0px 0px #736357;
+  border-radius: 3px;
+  text-decoration: none;
 }
 .page-header-main-pagination {
   width: 100%;
-  height: 11px;
-  border: 2px solid blue;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  height: 15px;
   margin: 327px 0 0 0 ;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-header-main-pagination-item {
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+  border: 2px solid transparent;
+}
+.page-header-main-pagination-item:hover {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 0.5;
 }
