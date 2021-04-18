@@ -3,3 +3,104 @@ body {
   max-width: 1920px;
   margin: 0 auto;
 }
+.page-header {
+  width: 1920px;
+  height: 1024px;
+  background-image: url(../img/bg_header.jpg);
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px 0 40px 0;
+}
+.page-header-navigation {
+  height: 56px;
+  border: 1px solid blue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 0 285px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.page-header-navigation-logo {
+  width: 56px;
+  border: 3px solid palevioletred;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+.page-header-navigation-menu {
+  width: 637px;
+  border: 3px solid orange;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 63px 0 219px;
+}
+.page-header-navigation-bag {
+  width: 18px;
+  border: 3px solid brown;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 28px 0 0;
+  background-color: transparent;
+}
+.page-header-navigation-search {
+  width: 24px;
+  border: 3px solid purple;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  background-color: transparent;
+}
+.page-header-main {
+  border: 2px solid green;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-header-main-pointer {
+  width: 40px;
+  height: 73px;
+  border: 2px solid purple;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  margin: 0;
+}
+.page-header-main-txt {
+  width: 589px;
+  height: 261px;
+  border: 2px solid blue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  margin: 0 475px 0 475px;
+}
+.page-header-main-pagination {
+  width: 100%;
+  height: 11px;
+  border: 2px solid blue;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 327px 0 0 0 ;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
