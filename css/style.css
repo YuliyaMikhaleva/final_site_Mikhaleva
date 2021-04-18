@@ -247,7 +247,7 @@ body {
 }
 .page-header-main-pagination {
   width: 100%;
-  height: 15px;
+  height: 11px;
   margin: 327px 0 0 0 ;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,14 +266,12 @@ body {
   border-radius: 50%;
   margin: 0 10px 0 0;
   border: 2px solid transparent;
-}
-.page-header-main-pagination-item:hover {
-  display: block;
-  width: 15px;
-  height: 15px;
-  background-color: transparent;
-  border: 1px solid #ffffff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  opacity: 0.5;
+}
+.page-header-main-pagination-item:hover {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
