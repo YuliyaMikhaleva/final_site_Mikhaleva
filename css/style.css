@@ -61,7 +61,7 @@ body {
   color: #c7b299;
 }
 .page-header-navigation-menu {
-  margin: 0 63px 0 219px;
+  margin: 0 33px 0 219px;
 }
 .page-header-navigation-menu-list {
   list-style-type: none;
@@ -103,26 +103,40 @@ body {
 .page-header-navigation-bag-svg:hover {
   fill: #c7b299;
 }
-.page-header-navigation-search {
-  width: 24px;
-  height: 56px;
+.page-header-navigation-form {
+  height: 24px;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: transparent;
-  background-image: url(../img/search.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right;
-  border: none;
   margin: 0;
-  padding: 0;
+  position: relative;
 }
-.page-header-navigation-search:focus {
-  width: 300px;
+.page-header-navigation-form-search {
+  background-color: transparent;
+  border: none;
+  top: -1px;
+  left: -1px;
   height: 24px;
+  position: absolute;
+  padding: 0 0 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #ffffff;
+}
+.page-header-navigation-form-svg {
+  -ms-flex-item-align: center;
+      align-self: center;
+  fill: #ffffff;
+}
+.page-header-navigation-form-search:focus {
+  width: 150px;
+  height: 26px;
   -webkit-transition: width ls ease-out;
   transition: width ls ease-out;
   background-position: right;
+  color: #ffffff;
+}
+.page-header-navigation-form:hover .page-header-navigation-form-svg {
+  fill: #c7b299;
 }
 .page-header-main {
   margin: 0;
