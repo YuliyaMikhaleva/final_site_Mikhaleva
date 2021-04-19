@@ -350,3 +350,39 @@ body {
 .services-item:hover:after {
   background-color: #c7b299;
 }
+.realization {
+  background-color: #fbfaf8;
+  padding: 83px 0 0 0;
+}
+.realization-title {
+  width: 500px;
+  font-family: 'raleway-semibold', 'arial', sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin: 0 auto;
+  text-align: center;
+}
+.realization-txt {
+  width: 757px;
+  font-family: 'montserrat', 'arial', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+  margin: 24px auto 40px auto;
+  text-align: center;
+}
+.realization-images {
+  height: 482px;
+  width: 1166px;
+  background-image: url('../img/realization_image1.jpg'), url('../img/realization_image2.jpg'), url('../img/realization_image3.jpg');
+  background-size: 66%, 65%, 65%;
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left, bottom right;
+}
+.realization-images:hover {
+  background-image: url('../img/realization_image2.jpg'), url('../img/realization_image3.jpg'), url('../img/realization_image1.jpg');
+  background-size: 80%, 65%, 50%;
+}
