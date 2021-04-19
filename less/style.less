@@ -1,5 +1,8 @@
 @color: #ffffff;
 @color-hover: #c7b299;
+@color-services: #555555;
+@color-services-txt: #8c8c8c;
+
 @font-face {
     font-family: raleway-regular;
     src: url('../fonts/raleway-regular.ttf');
@@ -8,6 +11,11 @@
 @font-face {
     font-family: raleway-extrabold;
     src: url('../fonts/raleway-extrabold.ttf');
+}
+
+@font-face {
+    font-family: raleway-semibold;
+    src: url('../fonts/raleway-semibold.ttf');
 }
 @font-face{
     font-family: montserrat;
@@ -20,6 +28,11 @@ body{
     margin: 0 auto;
 }
 
+.container{
+    width: 1166px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .page-header{
     width: 1920px;
     height: 1024px;
@@ -248,4 +261,67 @@ body{
             }
         }
     }
-}         
+} 
+
+.services{
+   width: 1166px;
+   min-height: 213px;
+   margin: 80px auto;
+   display: flex;
+   justify-content: center; 
+    &-item{
+        width: 266px;
+        min-height: 213px;
+        margin: 0 34px 0 0;
+        &-svg{
+            fill:@color-services;
+            display: block;
+            margin: 0 auto 29px auto;
+        }
+        &-title{
+            font-family: 'raleway-semibold', 'arial', sans-serif;
+            font-size: 22px;
+            line-height: 1.2;
+            font-weight: 600;
+            color: @color-services;
+            text-align: center;
+            margin: 0 0 19px 0;
+        }
+        &-txt{
+            font-family: 'montserrat', 'arial', sans-serif;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 300;
+            color: @color-services-txt;
+            text-align: center;
+            margin: 0 ;
+        }
+
+    }
+    &-item::after{
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+        background-color: #f1eee9;
+        margin: 30px auto 0 auto;
+    }
+    &-item:nth-child(2){
+        margin: 9px 34px 0 0;
+    }
+    &-item:nth-child(3){
+        margin: 4px 34px 0 0;
+    }
+    &-item:nth-child(4){
+        margin: 12px 0 0 0;
+    }
+    &-item:hover .services-item-svg{
+        fill:@color-hover;
+    }
+    &-item:hover .services-item-title{
+        color:@color-hover;
+    }
+    &-item:hover:after{
+        background-color:@color-hover;
+    }
+}
