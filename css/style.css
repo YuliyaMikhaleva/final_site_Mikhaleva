@@ -26,7 +26,8 @@ body {
           box-sizing: border-box;
 }
 .page-header {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   height: 1024px;
   background-image: url(../img/bg_header.jpg);
   background-color: grey;
@@ -34,7 +35,7 @@ body {
   background-size: cover;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 40px 0 40px 0;
+  padding: 40px 150px;
 }
 .page-header-navigation {
   height: 56px;
@@ -202,7 +203,7 @@ body {
   width: 589px;
   height: 261px;
   background-color: transparent;
-  margin: 0 475px 0 475px;
+  margin: 0 auto;
   color: #ffffff;
   text-align: center;
 }

@@ -35,14 +35,15 @@ body{
     box-sizing: border-box;
 }
 .page-header{
-    width: 1920px;
+    width: 100%;
+    max-width: 1920px;
     height: 1024px;
     background-image: url(../img/bg_header.jpg);
     background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    padding: 40px 0 40px 0;
+    padding: 40px 150px;
     &-navigation{
         height: 56px;
         margin: 0 0 285px 0;
@@ -185,7 +186,7 @@ body{
             width: 589px;
             height: 261px;
             background-color: transparent;
-            margin: 0 475px 0 475px;
+            margin: 0 auto;
             color: @color;
             text-align: center;
             &-subtitle{
