@@ -386,3 +386,70 @@ body {
   background-image: url('../img/realization_image2.jpg'), url('../img/realization_image3.jpg'), url('../img/realization_image1.jpg');
   background-size: 80%, 65%, 50%;
 }
+.aside {
+  max-width: 1920px;
+  background-color: #f4f5f8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+  padding: 48px 0 49px 0;
+}
+.aside-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.aside-wrp-txt {
+  width: 530px;
+}
+.aside-wrp-txt-title {
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+}
+.aside-wrp-txt-title-word {
+  color: #c7b299;
+}
+.aside-wrp-txt-text {
+  font-family: Montserrat;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #615855;
+  margin: 0;
+}
+.aside-wrp-link {
+  color: #ffffff;
+  display: block;
+  width: 170px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'raleway-extrabold', 'arial', sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #998675;
+  -webkit-box-shadow: inset 0px -3px 0px 0px #736357;
+          box-shadow: inset 0px -3px 0px 0px #736357;
+  border-radius: 3px;
+  text-align: center;
+}
+.aside-wrp-link:hover {
+  background-color: #ffffff;
+  color: #c7b299;
+}
+.aside-wrp-link:active {
+  background-color: #998675;
+  color: #ffffff;
+}
