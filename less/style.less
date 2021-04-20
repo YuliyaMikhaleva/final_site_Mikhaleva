@@ -9,6 +9,10 @@
 }
 
 @font-face {
+    font-family: raleway-medium;
+    src: url('../fonts/raleway-medium.ttf');
+}
+@font-face {
     font-family: raleway-extrabold;
     src: url('../fonts/raleway-extrabold.ttf');
 }
@@ -72,6 +76,9 @@ body{
         &-logo:hover{
             color: @color-hover;
         }
+        &-logo:active{
+            color: @color;
+        }
         &-menu{
             // width: 637px;
             margin: 0 33px 0 219px;
@@ -89,14 +96,11 @@ body{
                     color: @color;
                     text-decoration: none;
                 }
-                &-item:nth-child(2){
-                    color:@color-hover;
-                }
                 &-item:hover{
                     color: @color-hover;
                 }
-                &-item:nth-child(2):hover{
-                    color:@color;
+                &-item:active{
+                    color: black;
                 }
             }
         }
@@ -107,11 +111,15 @@ body{
             background-color: transparent;
             padding: 0;
             border: none;
+            outline: none;
             &-svg{
                 fill: @color;
             }
             &-svg:hover{
                 fill: @color-hover;
+            }
+            &-svg:active{
+                fill: black;
             }
         }
         &-form{
@@ -120,30 +128,34 @@ body{
             margin: 0;
             position: relative;
             &-search{
-                background-color: transparent;
+                width: 20px;
+                height: 40px;
+                outline: none;
+                background-color:transparent ;
+                position: absolute;
                 border: none;
-                top: -1px;
+                top: 0;
                 left: -1px;
                 height: 24px;
-                position: absolute;
                 padding: 0 0 0 30px;
-                box-sizing: border-box;
-                color: @color;
             }
             &-svg{
                 align-self: center;
                 fill: @color;
             }       
             &-search:focus{
-                width: 150px;
-                height: 26px;
-                transition: width ls ease-out;
+                width: 300px;
+                transition: width 1s ease-out;
                 background-position: right;
+                 border-bottom: 1px solid gray;
                 color: @color;
             }
         }
         &-form:hover .page-header-navigation-form-svg{
             fill: @color-hover;
+        }
+        &-form:active .page-header-navigation-form-svg{
+            fill: black;
         }
     }
     &-main{
@@ -160,6 +172,7 @@ body{
             background-color: transparent;
             border: none;
             position: relative;
+            outline: none;
         }
         &-pointer:after{
             content: "";
@@ -181,6 +194,10 @@ body{
         &-pointer:first-child:after{
             transform: rotate(-135deg);
             left: 10px;
+        }
+        &-pointer:active:after{
+            border-top: 2px solid @color;
+            border-right: 2px solid @color;
         }
         &-txt{
             width: 589px;
@@ -261,6 +278,11 @@ body{
                 transform: scale(1.09); 
             // 15px*15px = scale(1.09)
             }
+            &-item:active{
+                background-color: @color;
+                border: 2px solid @color;
+                transform: scale(1.00);
+            } 
         }
     }
 } 
@@ -382,9 +404,9 @@ body{
         &-txt{
             width: 530px;
             &-title{
-                font-family: Raleway;
+                font-family: 'raleway-medium', 'arial', sans-serif;
                 font-size: 28px;
-                line-height: 1.2;
+                line-height: 0.9;
                 font-weight: 400;
                 color: @color;
                 margin: 0 0 8px 0;
@@ -393,7 +415,8 @@ body{
                 }
             }   
             &-text{
-                font-family: Montserrat;
+                font-family: 'raleway-medium', 'arial', sans-serif; 
+                // в psdetch - raleway-medium, а в marsy - montserrat, выбрала первое
                 font-size: 18px;
                 line-height: 1.2;
                 font-weight: 300;
@@ -410,7 +433,7 @@ body{
             text-transform: uppercase;
             font-family: 'raleway-extrabold','arial',sans-serif;
             font-size: 14px;
-            line-height: 23px;
+            line-height: 14px;
             font-weight: 800;
             text-transform: uppercase;
             text-decoration: none;
