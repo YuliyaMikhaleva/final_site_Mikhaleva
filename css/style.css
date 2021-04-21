@@ -482,7 +482,7 @@ body {
           box-sizing: border-box;
 }
 .projects-title {
-  font-family: Raleway;
+  font-family: 'raleway-semibold', 'arial', sans-serif;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
@@ -491,7 +491,7 @@ body {
   margin: 0;
 }
 .projects-txt {
-  font-family: Montserrat;
+  font-family: 'montserrat', 'arial', sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -519,7 +519,7 @@ body {
   border: 1px solid #ebebeb;
   border-radius: 3px;
   padding: 10px 25px 8px 25px;
-  font-family: Montserrat;
+  font-family: 'montserrat', 'arial', sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 300;
@@ -564,7 +564,7 @@ body {
           box-sizing: border-box;
 }
 .projects-cards-item-title {
-  font-family: Raleway;
+  font-family: 'raleway-medium', 'arial', sans-serif;
   font-size: 20px;
   line-height: 1.2;
   font-weight: 500;
@@ -572,7 +572,7 @@ body {
   margin: 30px 28px 14px 28px;
 }
 .projects-cards-item-txt {
-  font-family: Montserrat;
+  font-family: 'montserrat', 'arial', sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
@@ -640,7 +640,7 @@ body {
           box-sizing: border-box;
   margin: 40px auto 0 auto;
   text-transform: uppercase;
-  font-family: 'raleway-regular', 'arial', 'sans-serif';
+  font-family: 'raleway-extrabold', 'arial', 'sans-serif';
   font-size: 14px;
   line-height: 14px;
   font-weight: 800;
