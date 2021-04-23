@@ -526,16 +526,6 @@ body{
             list-style-type: none;
             background-color: #fbfaf8;
             position: relative;
-            &-triangle{
-                border: 10px solid transparent;
-                border-bottom: 10px solid  #fbfaf8;
-                position: absolute;
-                top: 207px;
-                left: 25px;
-                width: 10px;
-                height: 30px;
-                box-sizing: border-box;
-            }
             &-title{
                 font-family: 'raleway-medium','arial', sans-serif;
                 font-size: 20px;
@@ -590,9 +580,6 @@ body{
         &-item:hover{
             background-color: #362f2d;
         }
-        &-item:hover .projects-cards-item-triangle{
-            border-bottom: 10px solid  #362f2d;
-        }
         &-item:hover .projects-cards-item-title{
             color:@color;
         }
@@ -604,6 +591,21 @@ body{
         }
         &-item:hover .projects-cards-item-search{
             fill:@color;
+        }
+        &-item::after{
+            content: "";
+            display: block;
+            border: 15px solid transparent;
+            border-bottom: 10px solid  #fbfaf8;
+            position: absolute;
+            top: 212px;
+            left: 25px;
+            width: 30px;
+            height: 10px;
+            box-sizing: border-box;
+        }
+        &-item:hover::after{
+            border-bottom: 10px solid  #362f2d;
         }
     }
     &-link{

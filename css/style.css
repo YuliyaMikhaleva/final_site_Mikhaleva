@@ -561,17 +561,6 @@ body {
   background-color: #fbfaf8;
   position: relative;
 }
-.projects-cards-item-triangle {
-  border: 10px solid transparent;
-  border-bottom: 10px solid  #fbfaf8;
-  position: absolute;
-  top: 207px;
-  left: 25px;
-  width: 10px;
-  height: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
 .projects-cards-item-title {
   font-family: 'raleway-medium', 'arial', sans-serif;
   font-size: 20px;
@@ -625,9 +614,6 @@ body {
 .projects-cards-item:hover {
   background-color: #362f2d;
 }
-.projects-cards-item:hover .projects-cards-item-triangle {
-  border-bottom: 10px solid  #362f2d;
-}
 .projects-cards-item:hover .projects-cards-item-title {
   color: #ffffff;
 }
@@ -639,6 +625,22 @@ body {
 }
 .projects-cards-item:hover .projects-cards-item-search {
   fill: #ffffff;
+}
+.projects-cards-item::after {
+  content: "";
+  display: block;
+  border: 15px solid transparent;
+  border-bottom: 10px solid  #fbfaf8;
+  position: absolute;
+  top: 212px;
+  left: 25px;
+  width: 30px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.projects-cards-item:hover::after {
+  border-bottom: 10px solid  #362f2d;
 }
 .projects-link {
   color: #ffffff;
