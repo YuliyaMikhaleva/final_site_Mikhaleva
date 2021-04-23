@@ -642,6 +642,19 @@ body {
 .projects-cards-item:hover::after {
   border-bottom: 10px solid  #362f2d;
 }
+.projects-cards-item:hover .projects-cards-item-title::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 374px;
+  height: 237px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  opacity: 60%;
+}
 .projects-link {
   color: #ffffff;
   display: block;

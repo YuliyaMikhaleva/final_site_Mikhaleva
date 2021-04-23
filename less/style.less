@@ -534,6 +534,7 @@ body{
                 color: #c7b299;
                 margin: 30px 28px 14px 28px;                
             }
+
             &-txt{
                 font-family: 'montserrat','arial', sans-serif;
                 font-size: 14px;
@@ -606,6 +607,18 @@ body{
         }
         &-item:hover::after{
             border-bottom: 10px solid  #362f2d;
+        }
+        &-item:hover .projects-cards-item-title::after{
+            content: "";
+            display: block;
+            background-color: black;
+            width: 374px;
+            height: 237px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            opacity: 60%;
         }
     }
     &-link{
