@@ -684,3 +684,69 @@ body {
   background-color: #998675;
   color: #ffffff;
 }
+.video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 705px;
+  overflow: hidden;
+  padding: 0;
+}
+.video-play {
+  background-color: black;
+}
+.video-block {
+  width: 30%;
+  margin: 210px 0 207px 0;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+}
+.video-block-btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.video-block-btn-svg {
+  fill: #ffffff;
+}
+.video-block-btn:hover .video-block-btn-svg {
+  fill: #362f2d;
+}
+.video-block-btn:active .video-block-btn-svg {
+  fill: #ffffff;
+}
+.video-block-title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 44px 0 29px 0;
+}
+.video-block-txt {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+.video-block-duration {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #c7b299;
+}

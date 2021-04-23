@@ -649,3 +649,67 @@ body{
         color: @color;
     }
 }
+.video{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 705px;
+    overflow: hidden;
+    padding: 0;
+   
+    &-play{
+     background-color: black;
+    }
+    &-block{
+        width: 30%;
+        margin: 210px 0 207px 0;
+        color: @color;
+        position: absolute;
+        text-align: center;            
+        &-btn{
+            width: 100px;
+            height: 100px;
+            border: none;
+            border-radius: 50%;
+            outline: none;
+            background-color: rgba(0, 0, 0, 0.2);
+            &-svg{
+                fill: @color;
+            }               
+        }
+        &-btn:hover .video-block-btn-svg{
+            fill: #362f2d;
+        }
+        &-btn:active .video-block-btn-svg{
+            fill: @color;
+        }
+
+        &-title{
+            font-family: Raleway;
+            font-size: 30px;
+            line-height: 1.2;
+            font-weight: 500;
+            color: #ffffff;
+            margin: 44px 0 29px 0;
+        }
+        &-txt{
+            font-family: Montserrat;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 300;
+            color: #ffffff;
+            margin: 0 0 40px 0;
+        }
+        &-duration{
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #c7b299;
+        }
+
+    }
+
+}
