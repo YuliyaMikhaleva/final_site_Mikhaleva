@@ -18,6 +18,14 @@
   font-family: montserrat;
   src: url('../fonts/montserrat-light.ttf');
 }
+@font-face {
+  font-family: montserrat-ultralight;
+  src: url('../fonts/montserrat-ultra-light.otf');
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url('../fonts/');
+}
 body {
   width: 100%;
   max-width: 1920px;
@@ -811,4 +819,80 @@ body {
   background-color: transparent;
   background-size: contain;
   background-repeat: no-repeat;
+}
+.numbers {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 300px;
+  margin: 0;
+  padding: 69px 0 60px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f4f5f8;
+  background-image: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427));
+  background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+}
+.numbers-item {
+  width: 100%;
+  max-width: 132px;
+  min-height: 172px;
+  margin: 0 73px 0 0;
+}
+.numbers-item-svg {
+  fill: #c7b299;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+.numbers-item-title {
+  display: block;
+  font-family: 'montserrat-ultralight', 'arial', sans-serif;
+  font-size: 48px;
+  line-height: 36px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 0 21px 0;
+}
+.numbers-item-txt {
+  display: block;
+  font-family: 'roboto-regular', 'arial', sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 ;
+}
+.numbers-item::after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 3px;
+  background-color: #f1eee9;
+  margin: 29px auto 0 auto;
+}
+.numbers-item:nth-child(2) {
+  margin: 0 81px 0 0;
+}
+.numbers-item:nth-child(3) {
+  margin: 0 105px 0 0;
+}
+.numbers-item:nth-child(4) {
+  margin: 0 110px 0 0;
+}
+.numbers-item:hover .numbers-item-svg {
+  fill: #c7b299;
+}
+.numbers-item:hover .numbers-item-title {
+  color: #c7b299;
+}
+.numbers-item:hover:after {
+  background-color: #c7b299;
 }
