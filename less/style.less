@@ -1027,4 +1027,35 @@ body{
         }
     }
 }
+.partners{
+    width: 100%;
+    max-width: 1920px;
+    min-height: 489px;
+    background-image: url('../img/partners-bg.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    &-link{
+        padding: 140px 90px 139px 0;
+        display: flex;
+        align-items: center;
 
+        &-img{
+            display: block;
+            background-color: transparent;
+        }
+        &-img:hover{
+            background-color: #362f2d;
+            border-radius: 10px;
+        }
+        &-img:active{
+            background-color: transparent;
+            border-radius: 10px;
+        }
+    }
+    &-link:nth-child(4){
+        padding: 140px 0 139px 0;
+    }
+}
