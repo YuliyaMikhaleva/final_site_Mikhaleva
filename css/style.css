@@ -896,3 +896,193 @@ body {
 .numbers-item:hover:after {
   background-color: #c7b299;
 }
+.posts {
+  text-align: center;
+  padding: 82px 0 80px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.posts-title {
+  width: 100%;
+  margin: 0;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.posts-txt {
+  max-width: 757px;
+  margin: 30px auto 40px;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.posts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.posts-block-article {
+  width: 100%;
+  width: 373px;
+  min-height: 355px;
+  text-align: left;
+  position: relative;
+  background-color: grey;
+}
+.posts-block-article-img {
+  width: 100%;
+  background-color: grey;
+  display: block;
+}
+.posts-block-article-wrp {
+  padding: 30px 44px 33px 29px;
+  background-color: #ffffff;
+  border: 1px solid #f8f8f8;
+  border-top: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  min-height: 174px;
+  width: 100%;
+  min-width: 172px;
+}
+.posts-block-article-wrp-title {
+  margin: 0;
+  font-family: Raleway;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #555555;
+}
+.posts-block-article-wrp-txt {
+  margin: 19px 0 27px 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.posts-block-article-wrp-link {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #c7b299;
+  text-decoration: none;
+}
+.posts-block-article-wrp-link::after {
+  content: "";
+  display: block;
+  border: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  position: absolute;
+  top: 372px;
+  left: 104px;
+  margin: 0 0 0 9px;
+}
+.posts-block-article-wrp-link:hover {
+  color: #ffffff;
+}
+.posts-block-article-wrp-link:active {
+  color: #c7b299;
+}
+.posts-block-article-date {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.posts-block-article-date-day {
+  display: block;
+  height: 35px;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 9px 10px 9px 11px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #363636;
+  border-radius: 3px 3px 0px 0px;
+}
+.posts-block-article-date-month {
+  display: block;
+  height: 25px;
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 7px 13px 6px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #252525;
+  border-radius: 0px 0px 3px 3px;
+}
+.posts-block-article:nth-child(2) {
+  margin: 0 30px 0 30px;
+}
+.posts-block-article:hover .posts-block-article-wrp {
+  background-color: #362f2d;
+  border: 1px solid #362f2d;
+  border-top: none;
+}
+.posts-block-article:hover .posts-block-article-img {
+  -webkit-filter: brightness(30%);
+          filter: brightness(30%);
+}
+.posts-block-article:hover .posts-block-article-date-day {
+  background-color: #c7b299;
+}
+.posts-block-article:hover .posts-block-article-date-month {
+  background-color: #a48d72;
+}
+.posts-block-article:hover .posts-block-article-wrp-title {
+  color: #c7b299;
+}
+.posts-block-article:hover .posts-block-article-wrp-txt {
+  color: #ffffff;
+}
+.posts-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0 0 0;
+}
+.posts-btn-link {
+  display: block;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  margin: 0 8px 0 0;
+  fill: #d1d1d1;
+}
+.posts-btn-link:nth-child(2) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin: 0;
+}
+.posts-btn-link:hover {
+  fill: #c7b299;
+}
+.posts-btn-link:active {
+  fill: black;
+}
